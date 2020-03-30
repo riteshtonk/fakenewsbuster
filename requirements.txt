@@ -1,0 +1,3 @@
+pip install python-twitter
+pip install flask
+pip install spacy

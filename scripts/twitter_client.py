@@ -15,8 +15,6 @@ class TwitterClient:
             tweets = self.api.GetUserTimeline(screen_name=screen_name, max_id=earliest_tweet, count=200)
             if not tweets:
                 break
-            #TODO: Remove the below short circuit
-            break
             new_earliest = min(tweets, key=lambda x: x.id).id
 
             if not tweets or new_earliest == earliest_tweet:
