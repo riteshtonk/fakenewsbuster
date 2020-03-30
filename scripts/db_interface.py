@@ -8,15 +8,7 @@ class FakeNewsData:
         self.claim_tokens.sort()
     
     def store_result(self, result):
-<<<<<<< HEAD
-        print("Result=" + result.upper())
-        if result.upper() == "TRUE":
-            self.result = "True"
-        elif result.upper() == "FALSE":
-            self.result = "False"
-        else:
-            self.result = "Maybe"
-=======
+
         result = result.strip().lower()
         if result == "true":
             self.claim_result = "True"
@@ -24,17 +16,12 @@ class FakeNewsData:
             self.claim_result = "False"
         else:
             self.claim_result = "Maybe"
->>>>>>> 412b9fd... Added handler for FactCheckIndia and an in memory store to save results
 
     def store_url(self, source_url):
         self.source_url = source_url
 
     def print(self):
-<<<<<<< HEAD
-        print(self.result)
-=======
         print(self.claim_result)
->>>>>>> 412b9fd... Added handler for FactCheckIndia and an in memory store to save results
         print(self.source_url)
         print(self.claim_tokens)
 

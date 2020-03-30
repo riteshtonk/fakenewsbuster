@@ -3,10 +3,9 @@
 from twitter_client import TwitterClient
 from FactCheckIndia_twitter_feed_handler import FactCheckIndiaTwitterFeedHandler
 from db_interface import InMemoryDBInterface
-<<<<<<< HEAD
-=======
+
 from flask import abort, jsonify, request, Flask
->>>>>>> 412b9fd... Added handler for FactCheckIndia and an in memory store to save results
+
 import json
 import spacy
 
