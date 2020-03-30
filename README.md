@@ -16,7 +16,8 @@ python .\scripts\main.py
 ```
 
 Send a REST message
-```curl -i -H "Content-Type: application/json" -X POST -d '{"message":"Not a single bomb blast took place in the country in last 6 yrs: Minister Javadekar"}' http://localhost:5000/message
+```
+curl -i -H "Content-Type: application/json" -X POST -d '{"message":"Not a single bomb blast took place in the country in last 6 yrs: Minister Javadekar"}' http://localhost:5000/message
 ```
 
 See the response
